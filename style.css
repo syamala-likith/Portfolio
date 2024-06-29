@@ -394,6 +394,14 @@ nav .fas{
         font-size: 16px;
         margin-right: 20px;
     }
+
+    .work img{
+        width: 95%;
+        border-radius: 10px;
+        display: block;
+        transition: transform 0.5s;
+    }
+
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
