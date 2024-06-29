@@ -402,10 +402,19 @@ nav .fas{
         margin-top: 50px;
         height: 50%;
     }
-
-    .work:hover .layer{
-        height: 90%;
+    .layer{
+        font-size: 10px;
     }
+    .layer a{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-size: 10px;
+    }
+    
 
     .contact-left, .contact-right{
         flex-basis: 100%;
