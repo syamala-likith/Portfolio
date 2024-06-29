@@ -102,9 +102,13 @@ nav ul li a:hover::after{
     width: 100%;
     border-radius: 10px;
     display: block;
+    /* height: 500px; */
 }
 .services-list div{
+    display: flex;
+    align-items: center;
     background: #262626;
+    /* height: fit-content; */
     padding: 20px;
     font-size: 13px;
     font-weight: 300;
