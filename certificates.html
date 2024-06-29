@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications</title>
+    <link rel="stylesheet" href="certificates.css">
+    <script src="https://kit.fontawesome.com/2ae402946b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html"><img src="images/logo1.png" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#portfolio">Protfolio</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <li class="fas fa-bars" onclick="openmenu()"></li>
+            </nav>
+            <div id="services">
+                <div class="container">
+                    <!-- <h1 class="sub-title">My Services</h1> -->
+                    <div class="services-list">
+                        <div>
+                            <a href="https://www.credly.com/badges/8604aeee-e77f-4afa-ad79-6e64e2f5f4b2/public_url" target="_blank"><img src="certifications/awscp.png"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.credly.com/badges/7dcd6657-3b19-4710-8dbe-acc593f1d22c/public_url" target="_blank"><img src="certifications/redhat.png"></a>
+                        </div>
+                        <div>
+                            <a href="https://learn.microsoft.com/api/credentials/share/en-us/SYAMALALIKITHSAIREDDY-4936/5AC4D881B7339B31?sharingId=2DD3A6AAC66917FB" target="_blank"><img src="certifications/azureai900.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
