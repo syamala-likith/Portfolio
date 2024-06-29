@@ -506,6 +506,10 @@ nav .fas{
         height: 50%;
     }
 
+    .certificate img{
+        width: 50%;
+    }
+
     .layer{
         font-size: 10px;
     }
