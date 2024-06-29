@@ -144,8 +144,9 @@
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
                     <!-- below will open in outlook -->
-                    <p><a href="mailto:syamala.likitg@gmail.com"><i class="fas fa-envelope"></i>syamala.likith@gmail.com</a></p>
-                    <!-- <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=syamala.likitg@gmail.com" target="_blank"><i class="fas fa-envelope"></i>syamala.likith@gmail.com</a></p> -->
+                    <!-- <p><a href="mailto:syamala.likitg@gmail.com"><i class="fas fa-envelope"></i>syamala.likith@gmail.com</a></p> -->
+                    <!-- <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=syamala.likith@gmail.com" target="_blank"><i class="fas fa-envelope"></i>syamala.likith@gmail.com</a></p> -->
+                    <p onclick="setEmailHref()"><a id="emailLink" href="#" target="_blank"><i class="fas fa-envelope"></i>syamala.likith@gmail.com</a></p>
                     <p onclick="makeCall()" style="cursor: pointer;"><i class="fas fa-phone-square-alt"></i>8978827699</p>
                     <!-- <p style="cursor: pointer;"><a href="tel:+918978827699" target="_blank"></a><i class="fas fa-phone-square-alt"></i>8978827699</p> -->
                     <div class="social-icons">
@@ -185,6 +186,15 @@
     <script>
         function makeCall() {
             window.location.href = "tel:+918978827699"; // Replace with your phone number
+        }
+
+        function setEmailHref() {
+            const emailLink = document.getElementById('emailLink');
+            if (window.innerWidth >= 600) {
+                emailLink.href = "https://mail.google.com/mail/?view=cm&fs=1&to=syamala.likith@gmail.com";
+            } else {
+                emailLink.href = "mailto:syamala.likith@gmail.com";
+            }
         }
     </script>
 
