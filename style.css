@@ -395,11 +395,11 @@ nav .fas{
         margin-right: 20px;
     }
 
-    .work img{
-        width: 95%;
-        border-radius: 10px;
-        display: block;
-        transition: transform 0.5s;
+    .work-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        grid-gap: 40px;
+        margin-top: 50px;
     }
 
     .contact-left, .contact-right{
