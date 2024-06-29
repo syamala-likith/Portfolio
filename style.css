@@ -527,7 +527,9 @@ nav .fas{
         font-size: 16px;
         margin-right: 20px;
     }
-
+    #skills{
+        width: 70vw;
+    }
     .work-list{
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(100%,1fr));
