@@ -400,6 +400,11 @@ nav .fas{
         grid-template-columns: repeat(auto-fit,minmax(100%,1fr));
         grid-gap: 40px;
         margin-top: 50px;
+        height: 50%;
+    }
+
+    .work:hover .layer{
+        height: 90%;
     }
 
     .contact-left, .contact-right{
