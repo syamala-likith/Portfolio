@@ -143,12 +143,15 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fas fa-envelope"></i>syamala.likith@gmail.com</p>
-                    <p><i class="fas fa-phone-square-alt"></i>8978827699</p>
+                    <!-- below will open in outlook -->
+                    <!-- <p><a href="mailto:syamala.likitg@gmail.com"><i class="fas fa-envelope"></i>syamala.likith@gmail.com</a></p> -->
+                    <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=syamala.likitg@gmail.com" target="_blank"><i class="fas fa-envelope"></i>syamala.likith@gmail.com</a></p>
+                    <p onclick="makeCall()"><i class="fas fa-phone-square-alt"></i>8978827699</p>
                     <div class="social-icons">
-                        <a href=""><i class="fab fa-linkedin"></i></a>
-                        <a href=""><i class="fab fa-instagram"></i></a>
-                        <a href=""><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/syamala-likith/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/syamala-likith" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/likith_sai_reddy_syamala?igsh=aWRkbWk2MWIzanA0" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/qr/L2ELUFD2226JC1" target="_blank"><i class="fab fa-whatsapp"></i></a>
                     </div>
                     <a href="images/LIKITH_SAI_REDDY_SYAMALA.pdf" download class="btn btn2">Download Resume</a>
                 </div>
@@ -167,6 +170,7 @@
             <p>Copyright &copy; Likith Sai Reddy Syamala</p>
         </div>
     </div>
+
     <script>
         var typed = new Typed(".text", {
             strings: ["FullStack Developer", "Frontend Developer", "Backend Developer", "Web Developer"],
@@ -176,6 +180,13 @@
             loop:true
         });
     </script>
+
+    <script>
+        function makeCall() {
+            window.location.href = "tel:+918978827699"; // Replace with your phone number
+        }
+    </script>
+
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents=document.getElementsByClassName("tab-contents");
