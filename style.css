@@ -490,7 +490,7 @@ nav .fas{
         margin-right: 20px;
     }
 
-    .work-list{
+    .work-list, .certificate-list{
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(100%,1fr));
         grid-gap: 40px;
