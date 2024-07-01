@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="aboutme.css">
+    <script src="https://kit.fontawesome.com/2ae402946b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html"><img src="images/logo1.png" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#portfolio">Protfolio</a></li>
+                    <li><a href="index.html#certificates">Certificates</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <li class="fas fa-bars" onclick="openmenu()"></li>
+            </nav>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/IMG20200729145626.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1> <br>
+                    <p> Hello! I am Likith Sai Reddy Syamala, a dedicated and passionate fourth-year BTech student specializing in Computer Science and Engineering at KL University. Alongside my formal education, I have been actively engaged in additional training at NxtWave CCBP 4.0 Academy since 2021, which has significantly enriched my learning experience. <br> <br>
+                        
+                        Throughout my academic journey, I have successfully completed four major projects, each contributing to my expertise in various web development frameworks and technologies. These projects include: <br> <br>
+                        
+                        1. <b>Library Management System</b> using Java Full Stack Web Development <br>
+                        2. <b>Academic Project Management System</b> using Enterprise Programming <br>
+                        3. <b>Food and Hospitality</b> platform using MERN Stack <br>
+                        4. <b>Travel, Tourism, and Hospitality</b> system developed with Python Full Stack Web Development <br> <br>
+                        
+                        I have a strong foundation in multiple programming languages, including Java and Python, which I prefer for most of my coding tasks. My skill set encompasses a wide range of technologies and frameworks: <br> <br>
+                        
+                        <b>Programming Languages:</b> <br> <br>
+                        - C <br>
+                        - Java <br>
+                        - Python <br> <br>
+                        
+                        <b>Front-End Development:</b> <br> <br>
+                        - HTML <br>
+                        - CSS <br>
+                        - JavaScript <br> <br>
+                        
+                        <b>Web Development:</b> <br> <br>
+                        - Java Full Stack Development + Microservices (Spring Boot, JPA, MySQL) <br>
+                        - Enterprise Programming (Hibernate, EJB, Servlets) <br>
+                        - MERN Stack Web Development <br>
+                        - Python Full Stack Development with Django <br> <br>
+                        
+                        <b>Databases:</b> <br> <br>
+                        - MySQL <br>
+                        - MongoDB <br>
+                        - PostgreSQL <br> <br>
+                        
+                        In addition to my academic and project work, I have earned several prestigious global certifications, including: <br> <br>
+                        
+                        - <strong>AWS Certified Cloud Practitioner (AWS CP)</strong> <br>
+                        - <strong>Red Hat Certified Enterprise Application Developer (EX183)</strong> <br>
+                        - <strong>Microsoft Azure AI Fundamentals (AI-900)</strong> <br> <br>
+                        
+                        My accomplishments also extend to completing four significant courses at NxtWave CCBP 4.0 Academy: <br> <br>
+                        
+                        - <strong>Build Your Own Static Website</strong> <br>
+                        - <strong>Build Your Own Responsive Website</strong> <br>
+                        - <strong>Build Your Own Dynamic Web Application</strong> <br>
+                        - <strong>Programming Foundations with Python</strong> <br> <br>
+                        
+                        <strong>Hackathon Experience:</strong> <br> <br>
+                        I have actively participated in 11 hackathons, with eight being part of my web development courses. Notably, I competed in a Python-based project hackathon during my first year and took part in prestigious events like the Smart India Hackathon conducted by the Ministry of Education's Innovation Cell and Code for Good 2024 organized by JP Morgan Chase & Co. <br> <br>
+                        
+                        <strong>Hobbies and Interests: </strong> <br> <br>
+                        Outside of my academic and professional pursuits, I enjoy playing badminton and watching anime. My passion lies in developing innovative projects using cutting-edge web technologies such as Spring Boot and the MERN stack. <br> <br>
+                        
+                        I am always eager to learn, grow, and take on new challenges in the ever-evolving field of web development. Thank you for visiting my portfolio!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

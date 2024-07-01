@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -87,50 +86,68 @@ nav ul li a:hover::after{
     color: #ff004f;
 }
 
-/* --------------------services------------------------- */
 
-#services{
-    padding: 30px 0;
+/* -----------------about----------------------- */
+#about{
+    padding: 80px 0;
+    color: #ababab;
 }
-.services-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(40vw,1fr));
-    grid-gap: 40px;
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.sub-title{
+    font-size: 30px;
+    font-weight: 600;
+    color: #ff004f;
+}
+
+#skills div span{
+    color: white;
+    font-size: 18px;
+    margin: 10px 0;
     margin-top: 50px;
 }
-.services-list img{
-    width: 100%;
-    border-radius: 10px;
-    display: block;
+#skills div{
+    width: 25vw;
+    /* margin-right: 20px; */
+    /* margin-bottom: 20px; */
 }
-.services-list div{
-    background: #262626;
-    padding: 20px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
+#skills{
+    width: 100vw;
 }
-.services-list div i{
-    font-size: 50px;
-    margin-bottom: 30px;
+.skill-bar {
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
 }
 
-.services-list div h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-.services-list div a{
-    text-decoration: none;
+.skill-percentage {
+    display: block;
+    height: 15px;
+    font-size: 10px;
+    line-height: 15px;
+    background-color: #ff004f;
     color: white;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
+    text-align: right;
+    padding-right: 10px;
+    border-radius: 25px 0 0 25px;
+    position: relative;
+    z-index: 1;
 }
-.services-list div:hover{
-    background: #ff004f;
-    transform: translateY(-10px);
+
+.skill-percentage::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 25px 0 0 25px;
+    z-index: 0;
 }
 
 
@@ -194,10 +211,48 @@ nav .fas{
         font-size: 16px;
         margin-right: 20px;
     }
+    #skills{
+        width: 70vw;
+    }
+    .work-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(100%,1fr));
+        grid-gap: 40px;
+        margin-top: 50px;
+        height: 50%;
+    }
+
+    .certificate-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(100%,1fr));
+        grid-gap: 40px;
+        margin-top: 50px;
+        height: 50%;
+    }
+    .layer, .certificate-layer{
+        font-size: 10px;
+    }
+    .layer a, .certificate-layer a{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-size: 10px;
+    }
+    
+
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
     .copyright{
         font-size: 14px;
     }
+}
+
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
 }
